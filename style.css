@@ -1,0 +1,309 @@
+#blockchain2 {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+}
+
+.jupwidget{
+    height: 500px;
+}
+
+.dropdown{
+    width: 40%;
+    margin-left: 15%;
+    margin-bottom: 1%;
+}
+
+
+.dropdownContent{
+    padding: 1%;
+    margin-top: 10;
+    margin-left: 10;
+    margin-bottom: 10;
+    text-align: left;
+}
+
+.disclaimer{
+    text-align: left;
+    margin-top: 5;
+    margin-left: 10;
+    font-size: 80%;
+}
+.show {
+    /* background-color: #23B3FF; */
+    background-color: rgba(35, 179, 255, 0.5)
+}
+
+
+
+.widget{
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* .collapsed {
+    width: 40%;
+    background-color: #000814;
+    border: medium solid #23B3FF
+} */
+
+.dropdown-title {
+    /* width: 40%; */
+    background-color: #000814;
+    border: thick solid #23B3FF;
+    top: 1px;
+    padding: 2%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+/* .internal-dropdown-title {
+    display: inline-block; */
+    /* width: 90%; */
+    /* background-color: #000814;
+    border: thick solid #23B3FF;
+    top: 1px;
+    padding: 2%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 100%;
+} */
+
+
+/* .dropdown-open .dropdown-title {
+    background-color: #000814;
+    border: medium solid #23B3FF;
+    padding: 1%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+} */
+
+html {
+    overflow-y: scroll;
+    
+}
+
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+            /*background-image: url("https://github.com/purebet/brand-assets/blob/main/ring%20dark%20mode.png?raw=true");*/
+            /*background-image: url("img/halo_dark.png");*/
+            background-size: 500px 501px;
+            background-repeat: no-repeat;
+            background-position: calc(50% - 165px) calc(50%);
+            background-attachment: fixed;
+    font-size: 16px;
+
+}
+
+
+#header {
+    display: flex;
+    justify-content: end;
+    padding: 1% 5% 0% 1%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+    text-align: center; 
+    padding-top: 20       
+}
+
+#logo {
+    margin-right: auto;
+}
+
+#footer {
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+}
+
+.icon {
+    margin: 16px;
+}
+
+.btn {
+    color: #1A1D1D;
+    background-color: #23B3FF;
+    padding: 12px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.item {
+    margin: 16px 24px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.hidden{
+ visibility: hidden;
+}
+
+.title {
+    font-family: 'Josefin Sans';
+    align-self: center;
+    font-size: 120px;
+}
+
+h1 {
+    margin:5%;
+}
+
+.sub {
+    margin-bottom: 64px;
+    width: 70%;
+    padding: 0 15%;
+    text-align: left;
+    font-size: 110%;
+    line-height: 130%;
+}
+
+
+@media (hover: none) {
+    #content{
+        padding-top: 100;
+    }
+
+    .sub {
+      width: 90%;
+      font-size: 30px;
+    }
+      /* Increase font size for mobile devices */
+    
+    .dropdown {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 30px;
+        text-align: center;
+      }
+    #blockchainWidgetContainer {
+        height: 80vh;
+        width: 95%;
+    }
+    #blockchainWidget{
+        transform: scale(2.5);
+        transform-origin: top left;
+        height: 100%;
+        width: 100%;
+        object-fit: cover
+    }
+    #exchangeWidgetContainer {
+        height: 80vh;
+        width: 95%;
+    }
+    #exchangeWidget{
+        transform: scale(2.5);
+        transform-origin: top left;
+        height: 100%;
+        width: 100%;
+        object-fit: cover
+    }
+  }
+
+@media (pointer:coarse) {
+       #content{
+        padding-top: 100;
+    }
+
+    .sub {
+      width: 90%;
+      font-size: 30px;
+    }
+
+      .dropdown {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 30px;
+        text-align: center;
+      }
+    #blockchainWidgetContainer {
+        height: 80vh;
+        width: 95%;
+    }
+    #blockchainWidget{
+        transform: scale(2.5);
+        transform-origin: top left;
+        height: 100%;
+        width: 100%;
+        object-fit: cover
+    }
+    #exchangeWidgetContainer {
+        height: 80vh;
+        width: 95%;
+    }
+    #exchangeWidget{
+        transform: scale(2.5);
+        transform-origin: top left;
+        height: 100%;
+        width: 100%;
+        object-fit: cover
+    }
+  }
+
+a.class1:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.class1:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.class1:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a.class1:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a.class2:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.class2:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.class2:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a.class2:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}

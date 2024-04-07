@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7E3XHHSMZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7E3XHHSMZT');
+</script>
+    <title> Purebet Onboarding </title>
+    <link rel="icon" type="image/x-icon" href="img/halo_dark_mode_square.ico">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans|Lato' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "style.css" />
+    <script src="https://cdn.mayan.finance/widget_ultimate-0-4-5.js" integrity="sha256-Dem40VAlLsczlbgJyd9U20HCZiihA1UFQy96wdDqVYQ=" crossorigin="anonymous"></script>
+    <script src = "script.js"> </script>
+    <script src="https://terminal.jup.ag/main-v1.js"></script>
+  </head>
+<body>
+  <div id="header" class = "w3-hide-small">
+    
+        <span id="logo">
+             <a href="index.html">
+                 <img src = "img/logo_dark.png" oldsrc="https://github.com/purebet/brand-assets/blob/main/ring%20text%20dark%20mode.png?raw=true" alt="Purebet logo" width="128.6" height="80">
+             </a>
+        </span>
+
+        <!-- <span class="item"><a href="https://swipe.purebet.io" class=class1 target="_blank">Try Swipe!</a></span>
+        <span class="item"><a href="https://docs.purebet.io" class="class1" target="_blank">Docs</a></span>
+        <span class="item"><a href="how-it-works.html" class="class1">How it works</a></span>
+        <span class="item"><a href="about.html" class="class1">About Us</a></span>
+        <span class="item"><a href="onboard.html" class=class1 >Onboarding</a></span>
+        <span class="item"><a href="blog.html" class=class1 >Blog</a></span> -->
+        
+        <span class="item btn"><a href="https://exchange.purebet.io/" class=class2 target="_blank">Start betting</a></span>
+    
+    </div>
+     <!-- navbar on mobile, this doesnt even work lol-->
+     <a style = "color:#23B3FF;" class="w3-bar-item w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu">
+         <img class = "w3-left" src="img/logo_dark.png" alt="Purebet logo" style="max-height:100%; max-width:20%;">
+         <i class="fa fa-bars w3-right"></i> 
+     </a>
+     <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; background-color:black;">
+         <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Home</a>
+         <a href="https://exchange.purebet.io" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Start betting!</a>
+         <!-- <a href="https://swipe.purebet.io" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Try Swipe!</a>
+         <a href="https://docs.purebet.io" target = "_blank" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Docs</a>
+         <a href="how-it-works.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">How it works</a>
+         <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">About Us</a>
+         <a href="onboard.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Onboarding</a>
+         <a href="blog.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">Blog</a> -->
+ </div>
+ 
+     <div id = "content">
+        <div class = "sub"> This page is designed to onboard new users to Purebet. Purebet never controls your funds. All services mentioned
+            on this page are run by 3rd Parties. </div>
+        <div class = "sub">
+            Purebet is based on the Solana blockchain. To interact with the blockchain, you need to use a Solana blockchain
+            wallet. We recommend <a href="https://phantom.app" target = "_blank">Phantom</a> but other options are <a
+              href="https://www.backpack.app/" target = "_blank">Backpack</a>, <a href="https://solflare.com/" target = "_blank">Solflare</a>, and many more. You are in
+            control of the funds in your wallet at all times. More information can be found <a
+              href="https://docs.purebet.io/crypto-help/wallets" target = "_blank">here</a>.
+        </div>
+
+        <div id = "blockchain" class = "collapsed dropdown"> 
+          <div class="dropdown-title" onclick="toggleShow('blockchain')">
+            If you have funds on Solana or another blockchain...
+          </div>
+          <div id = "blockchainDropDown" class="dropdown-content" style = "display:none;">
+            <div class = dropdownContent>
+              If you already have funds on Solana, you can use the widget by <a href="https://mayan.finance/" target = "_blank">Mayan Finance</a> below to swap SOL or USDT to USDC to start betting. More exotic tokens can be swapped to USDC via <a href = "https://jup.ag/" target = "_blank"> jup.ag </a>.
+            </div>
+            <div class = dropdownContent>
+              If you have funds on Ethereum, Arbitrum, BSC, or Avalanche, you can use the <a href="https://mayan.finance/" target = "_blank">Mayan Finance</a> bridge widget for the best bridging experience. The Mayan Finance infrastructure will handle all bridges and swaps to ensure you end up with the USDC tokens you need for betting at Purebet. Connect your Metamask, Coinbase Wallet, or Wallet Connect compatible wallet to the widget then connect the Solana wallet you would like to receive the USDC. Select the chain and token you want to bridge from and ensure you are happy with the given rate. You should also check the acceptable slippage in the settings. Bridging from Ethereum may have higher slippage because fees are included in the slippage rate. The progress of the bridging can be tracked on the Mayan Explorer from the link given once you initiate the swap. 
+            </div>
+            <!-- <div id = "blockchainWidget" class = widget onclick = "loadMayan('blockchainWidget', 'all')"> </div> -->
+            <div id = "blockchainWidgetContainer" class = widget> </div>
+            <div class = disclaimer>
+              Disclaimer: The above service is provided by <a href="https://mayan.finance/" target = "_blank">Mayan Finance</a>. Contact them in their <a href="https://discord.gg/6XgyBdeJ5D" target = "_blank">Discord server</a> if you have any issues.
+            </div>
+            <div class = dropdownContent>
+              If you are bridging to Solana for the first time, you will need some SOL to cover the very low gas fees. This can be obtained from the above Mayan widget by setting "Gas on desination" in the settings, or an exchange, by bridging, or by asking nicely in our <a href="https://discord.gg/22tr2FYAh9" target = "_blank">Discord server</a> and we will provide a small amount to allow you to make your first transaction. We recommend you obtain at least $1 worth of SOL, which will last many many transactions.
+            </div>
+            <div id = "blockchain2" class = "collapsed internal"> 
+            <div class="dropdown-title" onclick="toggleShow('blockchain2')">
+              Swap USDC to SOL
+            </div>
+            <div id = "blockchain2DropDown" class="dropdown-content" style = "display:none;">
+              <div class = dropdownContent>
+                You can use this swap widget below to swap your USDC to SOL. 
+              </div>
+              <div id = "blockchain2WidgetContainer" class = widget> 
+                <div id="integrated-terminal" class = jupwidget></div>
+              <script>
+                window.Jupiter.init({
+                  "displayMode": "integrated",
+                  "integratedTargetId": "integrated-terminal",
+                  "endpoint": "https://old-warmhearted-friday.solana-mainnet.discover.quiknode.pro/80b04fea1c08b06bacdeef853e8d62aed9d78556/",
+                  "defaultExplorer": "Solscan",
+                  "formProps": {
+                    "initialInputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "fixedInputMint": true,
+                    "initialOutputMint": "So11111111111111111111111111111111111111112",
+                    "fixedOutputMint": true,
+                    "initialAmount": "1000000"
+                  }
+                });
+              </script>
+              <div class = disclaimer>
+                Disclaimer: The above service is provided by <a href="https://jup.ag/" target = "_blank">Jupiter</a>. Contact them in their <a href="https://discord.com/invite/jup" target = "_blank">Discord server</a> if you have any issues.
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div id = "exchange" class = "collapsed dropdown"> 
+          <div class="dropdown-title" onclick="toggleShow('exchange')">
+            If you have funds on a centralised exchange…
+          </div>
+          <div id = "exchangeDropDown" class="dropdown-content" style = "display:none;">
+            <div class = dropdownContent>
+              Most exchanges like Binance allow you to withdraw SOL and USDC to a Solana blockchain wallet. Ensure the USDC is withdrawn to the Solana network or mentions SPL (Solana Program Library). Do a test withdrawal of a small amount if you are unsure. Some exchanges may only allow withdrawals of SOL to the Solana network. In this case, withdraw SOL to your Solana blockchain wallet, then swap most of it to USDC, leaving at least $1 worth of SOL to pay for future transaction fees. $1 of SOL will last many many transactions.
+            </div>
+            <!-- <div id = "exchangeWidget" class = widget onclick = "loadMayan2('exchangeWidget', 'SOL to USDC')"> </div> -->
+            <div id = "exchangeWidgetContainer" class = widget> </div>
+            <div class = disclaimer>
+              Disclaimer: The above service is provided by <a href="https://mayan.finance/" target = "_blank">Mayan Finance</a>. Contact them in their <a href="https://discord.gg/6XgyBdeJ5D" target = "_blank">Discord server</a> if you have any issues.
+            </div>
+            <div class = dropdownContent>
+              If your exchange does not allow withdrawals to the Solana blockchain, you can withdraw to another blockchain and follow the bridging instructions from the above section. If you do not already have a native token for gas fees, we recommend withdrawing a native token (ETH on Ethereum and Arbitrum, BNB on BSC, AVAX on Avalanche) and bridging it immediately via the steps listed in the section above.            </div>
+          </div>
+        </div>
+
+        <div id = "bank" class = "collapsed dropdown"> 
+          <div class="dropdown-title" onclick="toggleShow('bank')">
+            If you only have funds in your bank or card…
+          </div>
+          <div id = "bankDropDown" class="dropdown-content" style = "display:none;">
+            <div class = dropdownContent>
+              You could sign up to a centralised exchange, deposit funds via bank wire or card payment, and follow the instructions in the above section. 
+            </div>
+            <div class = dropdownContent>
+              Alternatively, you could look at instant fulfilment services, such as MoonPay which offer card to crypto transactions almost instantly, but take high fees for the luxury.
+            </div>
+            <div class = dropdownContent>
+             MoonPay is integrated directly into the Phantom wallet. Create your wallet then hit “buy” on the main page. Follow the steps and select MoonPay. The fees for this can be high (e.g. $100 only buys you $98.5 worth of USDC). This service is run by Phantom and MoonPay and is totally unaffiliated with Purebet. 
+            </div>
+            <div class = dropdownContent>
+             Remember, once you have the funds in your wallet, only you can control them. Additionally, MoonPay do not offer a crypto > card service. This can be obtained via centralised exchanges or other off-ramp services. 
+            </div>
+          </div>
+     </div>
+     <script>
+      function toggleMenu() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+          } else { 
+              x.className = x.className.replace(" w3-show", "");
+          }
+          x.setAttribute("style", "margin-top:46px; background-color:black;");
+      }
+     </script>
+</body>
+
+</html>
